@@ -4,33 +4,54 @@
 [![NPM Version][npm-image]][npm-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-Backend contruido en nodejs y mongoDB para la consulta de los hoteles dentro de la aplicacioón movil de almundo.
+Backend contruido en nodejs, express y mongoDB para la consulta de los hoteles dentro de la aplicacioón movil de almundo.
 
 ![](./Logo-Almundo.png)
 
 ## Instalación
 
-OS X y Linux:
-
-```sh
-sudo npm install
-```
-
-Windows:
+OS X, Linux y Windows:
 
 ```sh
 npm install
 ```
 
+##Base de datos
+
+El sistema utiliza el motor de base de datos no SLQ mongoDB y como ORM mongoose, actualmente el sistema maneja 2 bases de datos, una para el ambiente de desarrollo y otra para el ambiente de producción y estas a su ves estan alojadas en la plataforma llamada mongo Atlas.
+
+##Ejecución del backend
+
+Esta api se puede ejecutar en dos entornos distintos los cuales son desarrollo y producción, esto se hace igualando una variable de entorno 'NODE_ENV' al entorno en el que se desea ejecutar. Dependiendo del entorno en el que se ejecute, asi mismo se seleccionara la base de datos a la que se conecte el sistema.
+
+```sh
+
+//producción
+NODE_ENV=production
+
+//Desarrollo
+NODE_ENV=development
+
+```
+
+Seguido de esto le decimos a nodeJS que nos ejecute el archivo que levantara nuestro servidor:
+
+```sh
+
+NODE_ENV=production node app.js
+
+```
+
 ## Configuración de desarrollo
 
-para instalar alguna nueva dependencia dentro del sistema el proceso es sencillo, ha continueacion se coloca un ejemplod e esto:
+Para instalar alguna nueva dependencia dentro del sistema el proceso es sencillo, ha continueacion se coloca un ejemplod e esto:
 
 ```sh
 
 npm install <package> --save
 
 ```
+
 
 ## Historial de versiones
 
