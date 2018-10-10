@@ -4,7 +4,7 @@
 [![NPM Version][npm-image]][npm-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-Backend contruido en nodejs, express y mongoDB para la consulta de los hoteles dentro de la aplicacioón movil de almundo.
+Backend construido en nodejs, express y mongoDB para la consulta de los hoteles dentro de la aplicación móvil de almundo.
 
 ![](./Logo-Almundo.png)
 
@@ -18,11 +18,11 @@ npm install
 
 ##Base de datos
 
-El sistema utiliza el motor de base de datos no SLQ mongoDB y como ORM mongoose, actualmente el sistema maneja 2 bases de datos, una para el ambiente de desarrollo y otra para el ambiente de producción y estas a su ves estan alojadas en la plataforma llamada mongo Atlas.
+El sistema utiliza el motor de base de datos no SLQ mongoDB y como ORM mongoose, actualmente el sistema maneja 2 bases de datos, una para el ambiente de desarrollo y otra para el ambiente de producción y estas a su vez están alojadas en la plataforma llamada mongo Atlas.
 
 ##Ejecución del backend
 
-Esta api se puede ejecutar en dos entornos distintos los cuales son desarrollo y producción, esto se hace igualando una variable de entorno 'NODE_ENV' al entorno en el que se desea ejecutar. Dependiendo del entorno en el que se ejecute, asi mismo se seleccionara la base de datos a la que se conecte el sistema.
+Esta api se puede ejecutar en dos entornos distintos los cuales son desarrollo y producción, esto se hace igualando una variable de entorno 'NODE_ENV' al entorno en el que se desea ejecutar. Dependiendo del entorno en el que se ejecute, así mismo se seleccionará la base de datos a la que se conecte el sistema.
 
 ```sh
 
@@ -44,7 +44,7 @@ NODE_ENV=production node app.js
 
 ## Configuración de desarrollo
 
-Para instalar alguna nueva dependencia dentro del sistema el proceso es sencillo, ha continueacion se coloca un ejemplod e esto:
+Para instalar alguna nueva dependencia dentro del sistema el proceso es sencillo, a continuación se coloca un ejemplo de esto:
 
 ```sh
 
